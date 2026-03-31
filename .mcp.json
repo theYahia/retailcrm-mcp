@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "retailcrm": {
+      "command": "npx",
+      "args": ["-y", "@theyahia/retailcrm-mcp"],
+      "env": {
+        "RETAILCRM_URL": "",
+        "RETAILCRM_API_KEY": ""
+      }
+    }
+  }
+}
