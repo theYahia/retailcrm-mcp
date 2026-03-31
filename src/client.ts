@@ -2,9 +2,9 @@ const TIMEOUT = 15_000;
 const MAX_RETRIES = 3;
 
 function getBaseUrl(): string {
-  const url = process.env.RETAILCRM_URL;
-  if (!url) throw new Error("RETAILCRM_URL is not set");
-  const base = url.endsWith("/") ? url.slice(0, -1) : url;
+  const domain = process.env.RETAILCRM_DOMAIN || process.env.RETAILCRM_URL;
+  if (!domain) throw new Error("RETAILCRM_DOMAIN env var is not set");
+  const base = domain.endsWith("/") ? domain.slice(0, -1) : domain;
   return `https://${base.replace(/^https?:\/\//, "")}/api/v5`;
 }
 
