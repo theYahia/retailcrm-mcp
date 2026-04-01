@@ -1,7 +1,7 @@
 {
   "name": "@theyahia/retailcrm-mcp",
-  "version": "2.0.0",
-  "description": "Production-grade MCP server for RetailCRM — orders, customers, products, references, and analytics via API v5.",
+  "version": "2.0.1",
+  "description": "MCP server for RetailCRM — orders, customers, e-commerce analytics (Russia)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -51,7 +51,10 @@
     "ecommerce",
     "analytics",
     "delivery",
-    "streamable-http"
+    "streamable-http",
+    "api",
+    "typescript",
+    "e-commerce"
   ],
   "license": "MIT",
   "repository": {
